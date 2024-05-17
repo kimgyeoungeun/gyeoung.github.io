@@ -1,0 +1,115 @@
+h1{
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #ffc0cb;
+}
+/*로고랑 카테고리들*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 120%;
+}
+nav li{
+    margin-right: 50px;
+    transition: transform 0.3s;
+}
+nav li:hover {
+    transform: scale(1.2);
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+/*세부 카테고리*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(73, 73, 73, 0.114);
+    z-index: 1;
+    align-items: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-top: 10px;
+
+}
+
+.dropdown-content a {
+    color: rgb(95, 95, 95);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+h1:nth-child(2){
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    opacity: 0;
+    animation: fade-in 3s ease forwards;
+    font-size: 30px;
+}
+.container {
+    margin-left: 80px;
+    margin-bottom: 100px;
+    width: 480px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.281);
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    border-radius: 30px; /* 박스의 모서리를 둥글게 설정 */
+    overflow: hidden; /* 이미지가 모서리를 벗어나지 않도록 설정 */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fade-in 3s ease forwards;
+    z-index: 1;
+}
+
+.land{
+    width: 400px; /* 카레 이미지의 가로 크기 */
+    border-radius: 30px; /* 이미지의 모서리를 둥글게 설정 */
+    animation: fade-in 3s ease forwards;
+}
+.land-text{
+    float: right;
+    z-index: 2;
+    margin-top: -365px;
+    margin-right: 80px;
+    line-height: 200%;
+    color: white;
+    animation: fade-in 3.5s ease forwards;
+    font-weight: bold;
+}

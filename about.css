@@ -1,0 +1,64 @@
+h1{
+    color: #fff;
+}
+body{
+    background-color: #ffc0cb;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 120%;
+}
+nav li{
+    margin-right: 50px;
+    transition: transform 0.3s;
+}
+nav li:hover {
+    transform: scale(1.2);
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(73, 73, 73, 0.114);
+    z-index: 1;
+    align-items: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-top: 10px;
+
+}
+
+.dropdown-content a {
+    color: rgb(95, 95, 95);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+#h1{
+    text-align: center;
+}
